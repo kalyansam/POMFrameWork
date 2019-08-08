@@ -40,7 +40,7 @@ public class logintestcase extends read {
 		Assert.assertEquals(Title, "Amazon Sign-In");
 		 
 	}
-
+// data driven framework
 	@DataProvider(name="amazonlogindata")
 	public Object[][] logindata(){
 		Object[][] data= new Object[3][2];
