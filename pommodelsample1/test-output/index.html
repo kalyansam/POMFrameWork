@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Reddy\AppData\Local\Temp\testng-eclipse-1014887644\testng-customsuite.xml</span>
+                    <span>C:\Users\Reddy\AppData\Local\Temp\testng-eclipse--198875888\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,7 +101,17 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.qa.logintestcase" class="method navigator-link" hash-for-method="verify">verify</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.qa.logintestcase" class="method navigator-link" hash-for-method="logintestcase(9606188565, 96061885-5)">logintestcase(9606188565, 96061885-5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.qa.logintestcase" class="method navigator-link" hash-for-method="logintestcase(9606188565@, 9606188565)">logintestcase(9606188565@, 9606188565)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.qa.logintestcase" class="method navigator-link" hash-for-method="logintestcase(9606188565, 9606188565)">logintestcase(9606188565, 9606188565)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -115,7 +125,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.qa.logintestcase" class="method navigator-link" hash-for-method="logintestcase">logintestcase</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.qa.logintestcase" class="method navigator-link" hash-for-method="verify">verify</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -138,16 +148,96 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verify">
-                  </a> <!-- verify -->
-                  <span class="method-name">verify</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Amazon Sign-I] but found [Amazon Sign-In]
+                  <a name="logintestcase(9606188565, 96061885-5)">
+                  </a> <!-- logintestcase(9606188565, 96061885-5) -->
+                  <span class="method-name">logintestcase</span>
+                  <span class="parameters">(9606188565, 96061885-5)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Provided invalid credentials expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:178)
-	at org.testng.Assert.assertEquals(Assert.java:188)
-	at com.testcases.qa.logintestcase.verify(logintestcase.java:39)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.pages.qa.loginpages.loginp(loginpages.java:40)
+	at com.testcases.qa.logintestcase.logintestcase(logintestcase.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintestcase(9606188565@, 9606188565)">
+                  </a> <!-- logintestcase(9606188565@, 9606188565) -->
+                  <span class="method-name">logintestcase</span>
+                  <span class="parameters">(9606188565@, 9606188565)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Provided invalid credentials expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.pages.qa.loginpages.loginp(loginpages.java:40)
+	at com.testcases.qa.logintestcase.logintestcase(logintestcase.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintestcase(9606188565, 9606188565)">
+                  </a> <!-- logintestcase(9606188565, 9606188565) -->
+                  <span class="method-name">logintestcase</span>
+                  <span class="parameters">(9606188565, 9606188565)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Provided invalid credentials expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.pages.qa.loginpages.loginp(loginpages.java:40)
+	at com.testcases.qa.logintestcase.logintestcase(logintestcase.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -186,9 +276,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="logintestcase">
-                  </a> <!-- logintestcase -->
-                  <span class="method-name">logintestcase</span>
+                  <a name="verify">
+                  </a> <!-- verify -->
+                  <span class="method-name">verify</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,7 +286,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Reddy\AppData\Local\Temp\testng-eclipse-1014887644\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Reddy\AppData\Local\Temp\testng-eclipse--198875888\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -245,20 +335,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logintestcase')
 data.setCell(0, 2, 'com.testcases.qa.logintestcase')
-data.setCell(0, 3, 2766);
+data.setCell(0, 3, 3370);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify')
+data.setCell(1, 1, 'logintestcase')
 data.setCell(1, 2, 'com.testcases.qa.logintestcase')
-data.setCell(1, 3, 83);
+data.setCell(1, 3, 2320);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'logintestcase')
+data.setCell(2, 2, 'com.testcases.qa.logintestcase')
+data.setCell(2, 3, 1948);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verify')
+data.setCell(3, 2, 'com.testcases.qa.logintestcase')
+data.setCell(3, 3, 26);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -290,26 +388,54 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">logintestcase</span>
-                <span class="method-start">27206 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logintestcase(9606188565, 9606188565)</span>
+                <span class="method-start">25944 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenShot([TestResult name=logintestcase status=SUCCESS method=logintestcase.logintestcase()[pri:1, instance:c...)</span>
-                <span class="method-start">29976 ms</span>
+                <span class="method-name">screenShot([TestResult name=logintestcase status=FAILURE method=logintestcase.logintestcase(java.lang.String, j...)</span>
+                <span class="method-start">29319 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">31710 ms</span>
+                <span class="method-start">31243 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verify</span>
-                <span class="method-start">57391 ms</span>
+                <span class="method-name">logintestcase(9606188565@, 9606188565)</span>
+                <span class="method-start">56002 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenShot([TestResult name=verify status=FAILURE method=logintestcase.verify()[pri:2, instance:com.testcases.q...)</span>
-                <span class="method-start">57480 ms</span>
+                <span class="method-name">screenShot([TestResult name=logintestcase status=FAILURE method=logintestcase.logintestcase(java.lang.String, j...)</span>
+                <span class="method-start">57951 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">59484 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logintestcase(9606188565, 96061885-5)</span>
+                <span class="method-start">84936 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=logintestcase status=FAILURE method=logintestcase.logintestcase(java.lang.String, j...)</span>
+                <span class="method-start">87259 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">88731 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify</span>
+                <span class="method-start">114967 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verify status=SUCCESS method=logintestcase.verify()[pri:2, instance:com.testcases.q...)</span>
+                <span class="method-start">114995 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

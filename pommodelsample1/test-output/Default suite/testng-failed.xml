@@ -5,7 +5,7 @@
     <classes>
       <class name="com.testcases.qa.logintestcase">
         <methods>
-          <include name="verify"/>
+          <include name="logintestcase" invocation-numbers="0 1 2"/>
           <include name="setup"/>
           <include name="screenShot"/>
         </methods>

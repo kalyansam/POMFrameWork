@@ -18,7 +18,7 @@ public class screenshots extends read{
 try {
 	TakesScreenshot ts= (TakesScreenshot)driver;
 	File src=ts.getScreenshotAs(OutputType.FILE);
-	FileUtils.copyFile(src, new File("C:\\Users\\Reddy\\eclipse-workspace\\pommodelsample1\\screenshots\\"+result.getName()+".png"));
+	FileUtils.copyFile(src, new File("C:\\Users\\Reddy\\git\\POMFrameWork\\pommodelsample1\\screenshots\\"+result.getName()+".png"));
 	System.out.println(" successfully taken screen shots");
 } catch (WebDriverException e) {
 	// TODO Auto-generated catch block

@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 //import com.amazon.qa.pages.LoginPage;
@@ -16,7 +17,7 @@ import com.read.qa.read;
 
 public class logintestcase extends read {
 	screenshots screen= new screenshots();
-	loginpages loginpage;
+	 loginpages loginpage;
 	public   logintestcase() {
 		super();
 	}
@@ -27,17 +28,30 @@ public class logintestcase extends read {
 		loginpage= new loginpages();
 	}
 	
-	@Test(priority=1)
-     public void logintestcase() throws IOException {
+	@Test (dataProvider="amazonlogindata")
+     public  void logintestcase(String username1,String password1) throws IOException {
 			
-			loginpage.loginp();
+			loginpage.loginp(username1, password1);
 			
 		}
 	@Test(priority=2)
 	public void verify() throws IOException {
 		String Title=loginpage.verifytile();
-		Assert.assertEquals(Title, "Amazon Sign-I");
+		Assert.assertEquals(Title, "Amazon Sign-In");
 		 
+	}
+
+	@DataProvider(name="amazonlogindata")
+	public Object[][] logindata(){
+		Object[][] data= new Object[3][2];
+		
+		data[0][0]="9606188565";
+		data[0][1]="9606188565";
+		data[1][0]="9606188565@";
+		data[1][1]="9606188565";
+		data[2][0]="9606188565";
+		data[2][1]="96061885-5";
+		return data;				
 	}
 	
 	
